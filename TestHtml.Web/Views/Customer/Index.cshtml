@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<h2>Index</h2>
+
+<script type="text/javascript">
+    $(function() {
+
+        $.get("/Customer/GetCustomers")
+            .done(getModelSuccess);
+
+        function getModelSuccess(jsonData) {
+
+        }
+    });
+    
+</script>
